@@ -1,3 +1,15 @@
 // Place all the styles related to the Articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+div.preview {
+  width: 80%;
+  border: 2px solid;
+  border-radius: 10px;
+  border-color: #212121;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+li.preview {
+  display: inline;
+}

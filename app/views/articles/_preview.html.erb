@@ -1,0 +1,16 @@
+  <div class="preview light-primary-color secondary-text-color">
+    <ul>
+      <li class="preview primary_text">
+        <%= link_to article.title, article %>
+      </li>
+      <li class="preview secondary-text-color">
+        | <%= article.comments.count %> Comments
+      </li>
+    </ul>
+    
+    <% if article.body.length > 25 %>
+      <%= article.body.first(22) %>...
+    <% else %>
+      <%= article.body %>
+    <% end %>
+  </div>

@@ -13,3 +13,32 @@
  *= require_tree .
  *= require_self
  */
+
+ * {
+   font-family: 'Courier New', Courier, monospace;
+ }
+
+ body {
+   background-color: #212121;
+ }
+
+ div.main {
+  margin: 10px auto;
+  max-width: 75%;
+  padding: 10px; 
+  text-align: center;
+  border-radius: 10px;
+}
+
+ a {
+   text-decoration: none;
+ }
+
+ a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #212121;
+}
+
