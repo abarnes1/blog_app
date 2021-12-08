@@ -1,20 +1,25 @@
+<span id="back-button"><%= link_to "Back to Articles", articles_path %></span>
+
 <h1><%= @article.title %></h1>
 
 <div class="content-container article-body light-primary-color secondary-text-color">
   <%= @article.body %>
-  <ul>
-  <li class="comment-option"><%= link_to "Edit", edit_article_path(@article) %></li>
-  <li class="comment-option"><%= link_to "Destroy", article_path(@article),
-                  method: :delete,
-                  data: { confirm: "Are you sure?" } %></li>
-</ul>
+  <ul id="article-menu">
+    <li class="comment-option"><%= link_to "Edit", edit_article_path(@article) %></li>
+    <li class="comment-option"><%= link_to "Destroy", article_path(@article),
+                    method: :delete,
+                    data: { confirm: "Are you sure?" } %></li>
+  </ul>
 </div>
 
-
-
 <h2>Comments</h2>
+
 <div class="content-container light-primary-color secondary-text-color">
-  <%= render @article.comments %>
+  <% if @article.comments.size.zero? %>
+    Nobody has commented!
+  <% else %>
+    <%= render @article.comments %>
+  <% end %>
 </div>
 
 <h2>Add a comment:</h2>

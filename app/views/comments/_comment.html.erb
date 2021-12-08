@@ -1,9 +1,7 @@
-<p>
-  <strong>Commenter:</strong>
-  <%= comment.commenter %>
-</p>
+<span><%= comment.commenter %> says:</span>
 
-<p>
-  <strong>Comment:</strong>
+<p class="comment-body">
   <%= comment.body %>
 </p>
+
+<%= tag.hr unless comment_iteration.last? %>
