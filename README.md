@@ -4,7 +4,7 @@
 
 This blog app was created as part of [The Odin Project](https://www.theodinproject.com/)'s Ruby on Rails curriculum.  It follows this [Getting Started with Rails](https://guides.rubyonrails.org/getting_started.html) guide provided by Rails.
 
-[See the live version!](https://agile-plateau-43232.herokuapp.com/)  It is the tutorial but has a little extra styling a few code differences from tinkering with different helper methods.
+[See the live version!](https://agile-plateau-43232.herokuapp.com/)  It is the tutorial but has a little extra styling and a few code differences from tinkering with different helper methods.
 
 ## Learning Goals
 
