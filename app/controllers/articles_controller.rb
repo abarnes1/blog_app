@@ -40,7 +40,7 @@ class ArticlesController < ApplicationController
     @article.destroy
 
     redirect_to root_path
-  end 
+  end
 
   private
 

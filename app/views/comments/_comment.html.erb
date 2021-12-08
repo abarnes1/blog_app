@@ -4,10 +4,11 @@
   <%= comment.body %>
 </p>
 
-<p>
-  <%= link_to 'Destroy Comment', [comment.article, comment],
+<p class="comment-menu">
+  <%= link_to 'Delete', [comment.article, comment],
               method: :delete,
-              data: { confirm: "Are you sure?" } %>
+              data: { confirm: "Are you sure?" },
+              class: 'secondary-text-color' %>
 </p>
 
 <%= tag.hr unless comment_iteration.last? %>
