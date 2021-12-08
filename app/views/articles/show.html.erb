@@ -1,16 +1,21 @@
 <h1><%= @article.title %></h1>
 
-<p><%= @article.body %></p>
-
-<ul>
-  <li><%= link_to "Edit", edit_article_path(@article) %></li>
-  <li><%= link_to "Destroy", article_path(@article),
+<div class="content-container article-body light-primary-color secondary-text-color">
+  <%= @article.body %>
+  <ul>
+  <li class="comment-option"><%= link_to "Edit", edit_article_path(@article) %></li>
+  <li class="comment-option"><%= link_to "Destroy", article_path(@article),
                   method: :delete,
                   data: { confirm: "Are you sure?" } %></li>
 </ul>
+</div>
+
+
 
 <h2>Comments</h2>
-<%= render @article.comments %>
+<div class="content-container light-primary-color secondary-text-color">
+  <%= render @article.comments %>
+</div>
 
 <h2>Add a comment:</h2>
 <%= render "comments/form" %>

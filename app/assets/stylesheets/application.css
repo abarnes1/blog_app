@@ -30,15 +30,23 @@
   border-radius: 10px;
 }
 
- a {
-   text-decoration: none;
- }
+a {
+  text-decoration: none;
+}
 
- a:hover {
+a:hover {
   text-decoration: underline;
 }
 
 a:visited {
-  color: #212121;
+  color: inherit;
 }
 
+.content-container {
+  width: 80%;
+  border: 2px solid;
+  border-radius: 10px;
+  border-color: #212121;
+  padding: 10px;
+  margin: 10px auto;
+}

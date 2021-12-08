@@ -1,9 +1,7 @@
-<div class="main default-primary-color">
-  <h1 class="preview text_icons">Articles</h1>
+<h1 class="text-primary-color">Articles</h1>
 
-  <% @articles.each do |article| %>
-    <%= render "preview", article: article %>
-  <% end %>
+<% @articles.each do |article| %>
+  <%= render "preview", article: article %>
+<% end %>
 
-  <%= link_to "New Article", new_article_path, class: "preview_link" %>
-</div>
+<%= link_to "New Article", new_article_path, class: "text-primary-color" %>
